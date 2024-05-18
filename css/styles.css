@@ -136,10 +136,11 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(/images/people-office.jpg);
-  width: 1440px;
+  max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: auto;
 }
 .section-one-name {
   font-weight: 700;
@@ -424,6 +425,7 @@ button:focus {
 }
 .social-item-footer {
   display: flex;
+  gap: 16px;
 }
 .container-social {
   display: block;
@@ -440,6 +442,7 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link-footer:hover,
 .social-link-footer:focus {
